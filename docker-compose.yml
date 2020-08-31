@@ -19,7 +19,7 @@ services:
                 ports:
                         - 8009:8009
                         - 8080:8080
-				environment: 
+		environment: 
                         - "JAVA_OPTS=-Djava.net.preferIPv4Stack=true"
         forpdi-frontend:
                 build: ./frontend-web
@@ -29,6 +29,6 @@ services:
                 ports:
                         - 80:80
 volumes:
-    pdfs:
-    arquivos:
-    mysql:
+        pdfs:
+        arquivos:
+        mysql:
