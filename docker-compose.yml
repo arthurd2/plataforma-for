@@ -19,6 +19,8 @@ services:
                 ports:
                         - 8009:8009
                         - 8080:8080
+				environment: 
+                        - "JAVA_OPTS=-Djava.net.preferIPv4Stack=true"
         forpdi-frontend:
                 build: ./frontend-web
                 image: platfor-front
